@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }        
+        ul,ol,li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        ul{
+            text-align: center;
+        }
+        ul li{
+            display: inline-block;
+            width: 150px;
+            /* border: 1px darkblue solid; */
+        }
+        ul li a{
+            /* border: 1px salmon solid; */
+            display: block;
+            padding: 10px;
+            position: relative;
+        }
+        ul li a::before{
+            content: "|";
+            display: inline-block;
+            /* border: 1px darkblue solid; */
+            position: absolute;
+            left: 0;
+        }
+        ul li:first-child a::before{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+        <li><a href="#">menu5</a></li>
+    </ul>
+</body>
+</html>

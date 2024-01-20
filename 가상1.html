@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 5vw;
+            padding: 30px 0;
+        }
+
+        ul::before{
+            content: "";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: gainsboro;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        ul::after{
+            content: "";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: gainsboro;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        ul {
+            text-align: center;
+            background: slateblue;
+            position: relative;
+        }
+
+        ul li {
+            display: inline-block;
+            border: 1px darkblue solid;
+        }
+
+        ul li a {
+            display: block;
+            padding: 10px 20px;
+        }
+
+        ul li::before {
+            content: "♧";
+            display: block;
+            font-size: 30px;
+            color: darkmagenta;
+        }
+
+        ul li::after {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 15px;
+        }
+
+        ul li a::before {
+            content: "";
+            width: 10px;
+            height: 2px;
+            display: block;
+            border: 1px rebeccapurple solid;
+        }
+
+        ul li a::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background-image: url("img/잔디 강아지.jpg");
+            background-size: cover;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>가상 클래스 만들기</h1>
+    <ul>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+    </ul>
+</body>
+
+</html>

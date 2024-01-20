@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        html,
+        body {
+            font-size: 16px;
+            /* 기본 사이즈 16px, 12pt, 100% */
+        }
+
+        .em3 {
+            font-size: 3em;
+            /* 부모 사이즈의 3배 
+            16*3=48px 
+            만약 부모 글씨 크기가 12면 12*3=26px*/
+        }
+
+        .em {
+            font-size: 1.5em;
+            /* 15*1.5=24px 
+                소수점 단위도 사용 가능*/
+        }
+
+        .em_wrap {
+            font-size: 2em;
+            /* border: 1px saddlebrown solid; */
+        }
+
+        .rem_wrap {
+            font-size: 2rem;
+            /* 조상의 사이즈의 2배 */
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="em3">em3 글자크기를 가진 글씨</p>
+    <p class="em">em1.5 글자크기를 가진 글씨</p>
+    <p> 크기를 정하지 않은 글씨</p>
+    <h1>em과 rem 단위비교</h1>
+    <div class="em_wrap">
+        2em글씨
+        <!-- 32px -->
+        <div class="em_wrap">
+            2em글씨
+            <!-- 64px -->
+        </div><!-- em_wrap -->
+    </div><!-- em_wrap -->
+
+    <div class="rem_wrap">
+        2rem글씨
+        <!-- 32px -->
+        <div class="rem_wrap">
+            2rem글씨
+            <!-- 32px -->
+        </div><!-- rem_wrap -->
+    </div><!-- rem_wrap -->
+</body>
+
+</html>
